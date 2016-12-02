@@ -1,10 +1,11 @@
-// Background color until I can figure out how to use screen
+// Define Device
 
-// TODO: Check back later on Screen 
-// Commented out below until I figure out the workaround
-// Screen.backgroundColor = "#28affa"
+Framer.Device = new Framer.DeviceComponent();
+Framer.Device.setupContext();
 
-bg = new BackgroundLayer({backgroundColor: "#28affa"})
+// deviceType: "fullscreen"
+
+Screen.backgroundColor = "#28affa"
 
 // Create layers to switch between
 
@@ -13,7 +14,7 @@ layerB = new Layer({x:0, y:0, width:400, height:400,borderRadius: 4, backgroundC
 
 // Create parent layer to clip, and position the flow componennt
 
-layerC = new Layer({width: 400, height: 400, borderRadius: 4, x: Align.center, y: Align.center})
+layerC = new Layer({width: 400, height: 400, borderRadius: 24, x: Align.center, y: Align.center})
 layerC.clip = true
 
 
